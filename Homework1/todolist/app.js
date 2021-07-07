@@ -22,6 +22,8 @@ function createTodo() {
     li.appendChild(doneElement);
     doneElement.addEventListener('click', doneEl)
 
+
+
     function doneEl(){
         li.className = "done";
     }
@@ -36,6 +38,8 @@ function changeListAfterKeyPress(event) {
         createTodo();
     }
 }
+
+
 
 
 userInput.addEventListener('keypress', changeListAfterKeyPress);
